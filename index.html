@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lomello Fabrizio</title>
+  <meta name="description" content="Portafolio de Fabrizio Lomello: landing pages, chatbots con IA y dashboards en Power BI." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Principal">
+            <ul class="nav-links">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-grid">
+    <!-- Izquierda: título -->
+    <div class="hero-left">
+      <h1>
+        Mi Nombre es <span class="hl">Fabrizio Lomello</span><br>
+        y soy <span class="hl">Desarrollador Web</span>
+      </h1>
+
+      <div class="social">
+        <span>Encontrame en:</span>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+        <a href="#" aria-label="X">𝕏</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+
+    <!-- Centro: foto -->
+    <div class="hero-center">
+      <div class="photo-wrap">
+        <img src="assets/perfil.png" alt="Foto de Fabrizio">
+      </div>
+    </div>
+
+    <!-- Derecha: texto, botones y métricas -->
+    <div class="hero-right">
+      <p class="intro">
+        Hola, soy Fabrizio. Trabajo en diseño web, bases de datos y automatización.  
+        Me enfoco en crear soluciones simples y efectivas para negocios reales.
+      </p>
+
+      <div class="cta">
+        <a href="#contacto" class="btn">Contáctame</a>
+        <a href="assets/cv.pdf" class="btn-outline" download>⬇️ Descargar mi CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- SERVICES HEADER -->
+    <section id="servicios" class="services">
+  <div class="services-header">
+    <div class="sh-left">
+      <h2>
+        Mis <span>Servicios</span> Para<br>
+        Impulsar Tu <span>Negocio</span>
+      </h2>
+    </div>
+    <div class="sh-right">
+      <p>
+        Ofrezco soluciones digitales personalizadas: creación de páginas web,
+        integración de chatbots con inteligencia artificial y dashboards en Power BI
+        para la toma de decisiones estratégicas.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <!-- SERVICES CARDS -->
+        <section class="services-list" aria-label="Lista de servicios">
+            <div class="cards-grid">
+            <article class="service-card">
+                <div class="service-icon">🖥️</div>
+                <h3>Landing Page</h3>
+                <p>Crea presencia profesional y capta leads con una landing rápida, responsive y optimizada para SEO/Ads.</p>
+                <a href="#contacto" class="learn-more">Ver más →</a>
+            </article>
+
+            <article class="service-card featured">
+                <div class="service-icon">🤖</div>
+                <h3>Chatbot con IA</h3>
+                <p>Automatiza respuestas, califica consultas y atiende 24/7 en WhatsApp, web o redes con modelos de IA.</p>
+                <a href="#contacto" class="learn-more">Ver más →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Dashboard (Power BI)</h3>
+                <p>Visualiza ventas y KPIs en tiempo real. Conecta tus datos y toma decisiones basadas en métricas.</p>
+                <a href="#contacto" class="learn-more">Ver más →</a>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="footer-wrap">
+        <div class="footer-brand">
+            <a href="#inicio" class="footer-logo">Fabrizio Lomello</a>
+            <p>Desarrollo web, chatbots con IA y dashboards para impulsar tu negocio.</p>
+            <nav class="footer-social" aria-label="Redes sociales">
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <h4>Secciones</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a href="mailto:fabriziolomello@mail.com">fabriziolomello@mail.com</a></li>
+                <li><a href="tel:+549000000000">+54 9 00 0000 0000</a></li>
+                <li>Buenos Aires, Argentina</li>
+            </ul>
+            <a class="footer-cta" href="https://wa.me/549000000000" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <small>© <span id="year"></span> Fabrizio Lomello — Todos los derechos reservados.</small>
+        <nav class="footer-legal" aria-label="Legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+        </nav>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
