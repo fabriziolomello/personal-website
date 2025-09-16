@@ -44,16 +44,30 @@ html,body{
 }
 
 /* ================== HEADER ================== */
+
 header{
   background: var(--surface);
-  padding: 1rem 2rem;
+  padding-block: 1rem;   /* arriba/abajo */
+  padding-inline: 0;     /* sin padding a los lados */
+  margin: 0 40px;        /* 👈 mismo margen que .hero */
 }
+
 .navbar{ display:flex; justify-content:flex-end; }
 .nav-links{ list-style:none; display:flex; gap:2rem; }
 .nav-links a{
   text-decoration:none; color: var(--text); font-weight:700; transition: color .3s ease;
 }
 .nav-links a:hover{ color: var(--accent); }
+
+@media (max-width: 768px){
+  .navbar {
+    justify-content: center; /* centra los enlaces */
+  }
+
+  .nav-links {
+    gap: 1rem; /* separa un poco los items */
+  }
+}
 
 /* ===================================================== */
 /* ==================== HERO =========================== */
@@ -62,7 +76,7 @@ header{
   padding: 64px var(--space);
   border: 2px solid var(--accent);  /* grosor + color */
   border-radius: 16px;              /* esquinas redondeadas opcional */
-   margin: 0 40px;  /* agrega espacio a izquierda y derecha */
+  margin: 0 40px;  /* agrega espacio a izquierda y derecha */
 }
 .hero-grid{
   display:grid;
