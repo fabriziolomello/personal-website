@@ -46,7 +46,7 @@ html,body{
 /* ================== HEADER ================== */
 
 header{
-  background: var(--surface);
+  background: var(--bg);
   padding-block: 1rem;   /* arriba/abajo */
   padding-inline: 0;     /* sin padding a los lados */
   margin: 0 40px;        /* 👈 mismo margen que .hero */
